@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	pratikshya.github.io
+	</title>
+</head>
+<style>
+	
+	body{background-color:black;}
+	.btn
+	{
+		padding:1.5% 1.5%;border-radius:5%;width:15%;
+		text-align:center;
+		font-size:60%;
+		background-color:lightblue;
+		margin-left:25%;margin-right:-5%;
+		border:none;color:white;
+		outline:none;cursor:pointer;
+		box-shadow:75% 75% white;
+	}
+	.btn:hover
+	{background-color:grey;}
+	#list ul
+	{
+	list-style:none;margin-left:40%;margin-top:-25%;margin-right:10%;font-size:70%;cursor:pointer;
+	}
+	#list ul li
+	{
+	background-color:blue;
+	width:30%;height:25%;padding:1.5% 1.5%;
+	border:solid white;text-align:center;padding:light blue;cursor:pointer
+	border:5%;
+	}
+	#list ul ul
+		{display:none;margin-left:100%;width:175%;font-size:75%;cursor:pointer;}
+	#list ul li:hover > ul{display:block;}
+	#list ul ul ul
+	{
+	margin-left:75%;width:400%;height:400%;font-size:105%;
+	}
+	#btn1
+	{
+	margin-top:25%;margin-left:100%;background-color:red;margin-left:37%;cursor:pointer;height:110;
+	}
+	
+	
+	
+</style>
+<body text="white">
+	<H1><center>KNOW ABOUT ME</center><H1>
+	<button class="btn" onclick="myname()">NAME</button>
+	<button class="btn" onclick="mydept()">DEPARTMENT</button>
+    <a href="FINAL_GAME.html"><button id="btn1">CLICK ME TO PLAY CHERRY JACKPOT GAME</button></a>
+	<div id="list">
+	<ul>
+	<li>MORE ABOUT ME
+		<ul>
+			<li>My HomeState
+				<ul>
+				<li>Odisha</li>
+				</ul>
+			</li>
+			<li>My HomeTown
+				<ul>
+				<li>Bhubaneswar</li>
+				</ul>
+			</li>
+			<li>My Education
+		        <ul>
+				<li>10th:Loyola School</li>
+			    <li>12th:Mother's Public School</li>
+	            </ul>
+			</li>
+		    <li>My hobbies
+                <ul>
+			    <li>painting</li>
+			    <li>sleeping</li>
+			    </ul>
+			 </li>
+		
+		</ul>
+	</li>
+	</ul>
+	</div>
+	 
+<script>
+	function myname()
+	{
+	alert("Hey my name is Pratikshya");
+	}
+	function mydept()
+	{
+	alert("Production Engineering");
+	}
+</script>
+	</body>
+</html>
+
