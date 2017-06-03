@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head> 
+	<title>
+	CHERRY JACKPOT GAME
+	</title>
+</head>
+<style>
+	#box1
+	{
+		width:300px;
+		height:250px;
+		background-color:yellow;
+		float:left; justify-content:center;align-items:center;
+	}
+	#box2
+	{
+		width:300px;
+		height:250px;
+		background-color:green;
+		float:left;justify-content:center; align-items:center;
+		margin-left:25px;
+		margin-right:25px;
+	}
+	#box3
+	{
+		width:300px;
+		height:250px;
+		background-color:red;justify-content:center; align-items:center;
+		float:left;
+	}	
+	#SpinNumbers
+	{
+		width:150px;
+		height:150px;
+		background-colour:blue;
+		align-items:center;
+		float:bottom;
+	}
+</style>
+<script>
+	function spin_numbers()
+	{
+		var i=Math.floor(Math.random()*3);
+		var x1=document.getElementById("box1");
+		x1.innerHTML=(i+2)%10;
+		var x2=document.getElementById("box2");
+		x2.innerHTML=(i+5)%10;
+		var x3=document.getElementById("box3");
+		x3.innerHTML=(i+7)%10;
+		i++;
+	}
+</script>
+<body>
+	<center>
+		<H1>CHERRY  GAME</H1>
+	</center>
+	<div id="box1"></div>
+	<div id="box2" ></div>
+	<div id="box3" ></div>
+	<input id="btn" class="SpinNumbers" type="button" value="Spin!" onclick="spin_numbers()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
