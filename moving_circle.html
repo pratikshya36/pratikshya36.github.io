@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	BULL'S EYE
+	</title>
+</head>
+<style>
+	#canvas1{border:solid black;border:10%;background-color:lightblue;margin-left:1%;}
+	#btn
+	{
+	margin-top:0.5%;margin-left:5%;cursor:pointer;background-color:red;padding:0.5% 0.5%;border:5%;border:solid black;margin-bottom:2%;border-radius:10%;font-weight:105%;}
+	}
+	#instructions
+	{
+	   
+       margin-bottom:30%;margin-left:10%;   
+       text-align: center;    
+       bottom: 0%; 
+       width: 100%;text-align:left;margin-top:-3%;
+   } 
+</style>
+<body>
+	<canvas id="canvas1" width="1300%" height="500%">
+	</canvas>
+	<button id="btn">START</button>
+	<button id="btn">PAUSE</button>
+	<button id="btn">RESUME</button>
+	<button id="btn">RESTART</button>
+	<p id="instructions">POINTS TO BE NOTED</p>
+<script>
+	//execute draw function when DOM is ready
+	window.onload=draw;
+		var y=400,x=50;
+		
+		function draw( )
+		{
+		var canvas2=document.getElementById("canvas1");
+		var ctx=canvas2.getContext("2d");
+		if(y>50)
+		{ctx.clearRect(0,0,1300,500);
+		ctx.strokeStyle="red";
+		ctx.beginPath();
+		ctx.arc(1050,y,30,0,Math.PI*2,false);//x,y,radius,start angle,end angle,clockwise(false)/anti-clockwise(true)
+		ctx.closePath();ctx.stroke();y=y-4;
+		setTimeout(draw,(100));}
+		if ((y<=50)&&(x<400))
+	    {
+		ctx.clearRect(0,0,1300,500);
+		ctx.strokeStyle="red";
+		ctx.beginPath();
+		ctx.arc(1050,x,30,0,Math.PI*2,false);//x,y,radius,start angle,end angle,clockwise(false)/anti-clockwise(true)
+		ctx.closePath();ctx.stroke();x=x+4;
+		setTimeout(draw,(100));
+		}
+		if(x>=400)
+		{x=50;y=400;}
+		}
+</script>
+</body>
+</html>
